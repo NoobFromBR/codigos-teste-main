@@ -5,7 +5,7 @@ import time
 
 # Caminho para o Brave e o ChromeDriver
 brave_path = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-driver_path = "F:\\code\\chromedriver-win64\\chromedriver.exe"  # ajuste conforme necessário
+driver_path = "F:\\code\\chromedriver-win64\\chromedriver.exe"  
 
 # Configurações do navegador
 options = Options()
