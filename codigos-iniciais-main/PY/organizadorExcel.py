@@ -1,8 +1,8 @@
 import pandas as pd
 
-def transformar_para_horizontal(caminho_arquivo_excel, nome_aba=0):
+def transformar_para_horizontal(caminho = r"C:\Users\Lennovo S145\OneDrive\Documentos\Dnit\Nova pasta\curva s.xlsx", nome_aba=0):
     # Lê a planilha
-    df = pd.read_excel(caminho_arquivo_excel, sheet_name=nome_aba, header=None)
+    df = pd.read_excel(caminho, sheet_name=nome_aba, header=None)
 
     # Inicializa os dados finais
     dados_formatados = {}
@@ -30,7 +30,7 @@ def transformar_para_horizontal(caminho_arquivo_excel, nome_aba=0):
     return df_final
 
 # Uso:
-caminho = "seuarquivo.xlsx"  # substitua pelo seu caminho
+caminho = r"C:\Users\Lennovo S145\OneDrive\Documentos\Dnit\Nova pasta\curva s.xlsx"  # substitua pelo seu caminho
 df_horizontal = transformar_para_horizontal(caminho)
 
 # Salvar em novo Excel
